@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+
 
 namespace Intefaz
 {
@@ -80,10 +81,9 @@ namespace Intefaz
                 using (var content = new ByteArrayContent(byteData))
                 {
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                    MessageBox.Show("Listo 1");
-                    response = await client.PostAsync(url, content);
+                    response = await client.PostAsync(url, content).ConfigureAwait(continueOnCapturedContext: false);
                     var result = await response.Content.ReadAsStringAsync();
-                    
+
                     JObject json = JObject.Parse(result);
 
                     int prediccionnes = ((JArray)json["predictions"]).Count;

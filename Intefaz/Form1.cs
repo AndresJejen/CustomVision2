@@ -49,7 +49,7 @@ namespace Intefaz
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
+                    MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido " + ex.Message);
                 }
             }
         }
@@ -66,10 +66,10 @@ namespace Intefaz
             var client = new HttpClient();
 
             // Request headers - replace this example key with your valid subscription key.
-            client.DefaultRequestHeaders.Add("Prediction-Key", "30bb428a529948a483cae7cd9e020c54");
+            client.DefaultRequestHeaders.Add("Prediction-Key", "12aa990fb36a42388077e5c52de53b3f");
 
             // Prediction URL - replace this example URL with your valid prediction URL.
-            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/17c04784-53f3-4fd7-aada-9779aa7902c2/image?iterationId=deb4d9b5-cdd4-4e2f-83cc-d5ec033e7243";
+            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/7b0c31c4-0616-4453-acf7-7f6b14ba24c9/image?iterationId=0adee43b-92e0-4091-8ba6-7aff5b10cc24";
 
             HttpResponseMessage response;
             try
@@ -80,8 +80,10 @@ namespace Intefaz
                 using (var content = new ByteArrayContent(byteData))
                 {
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                    MessageBox.Show("Listo 1");
                     response = await client.PostAsync(url, content);
                     var result = await response.Content.ReadAsStringAsync();
+                    
                     JObject json = JObject.Parse(result);
 
                     int prediccionnes = ((JArray)json["predictions"]).Count;
@@ -105,8 +107,7 @@ namespace Intefaz
             }
             catch (Exception error)
             {
-                prediccion = "";
-                prediccion = error.Message; 
+                MessageBox.Show(error.Message);
             }
         }
     }

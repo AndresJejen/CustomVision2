@@ -1,0 +1,12 @@
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Intefaz.exe.config
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Intefaz.exe
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Intefaz.pdb
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.csprojResolveAssemblyReference.cache
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.FCustomVision.resources
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.Properties.Resources.resources
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.csproj.GenerateResource.Cache
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.exe
+C:\Users\Andres\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Intefaz\obj\Debug\Intefaz.pdb
